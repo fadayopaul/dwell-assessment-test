@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>E-commerce Website - Home</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/dd8a7c06d3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Custom Javascript-->
+    <script defer src="chat.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">E-commerce Website</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#categories">Category</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- chat box -->
+    <div class="chat-box">
+      <div class="card">
+        <div class="card-header">
+          Chat
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div id="message-box"></div>
+          <form>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="message-input"
+                rows="3"
+                placeholder="Type your message here"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="send-button">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-icon">
+      <i class="far fa-comment"></i>
+    </div>
+
+    <!-- Main content -->
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Categories -->
+        <div class="col-md-3">
+          <h5>Product Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="#cat-el">Electronics</a></li>
+            <li><a href="#cat-fur">Furniture</a></li>
+            <li><a href="#cat-cl">Clothing</a></li>
+            <li><a href="#cat-gm">Games & Toys</a></li>
+            <li><a href="#cat-vet">Veterinary & Pet Items</a></li>
+            <li><a href="#cat-sta">Stationery</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="col-md-9">
+          <h5>Featured Products</h5>
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  alt="Product 1"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">Product 1</h6>
+                  <p class="card-text">$19.99</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                  alt="product-2"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">Product 2</h6>
+                  <p class="card-text">$24.99</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                  alt="Product 3"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">Product 3</h6>
+                  <p class="card-text">$29.99</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                  alt="Product 4"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">Product 4</h6>
+                  <p class="card-text">$14.99</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2R1Y3R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+                  alt="Product 5"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">Product 5</h6>
+                  <p class="card-text">$34.99</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2R1Y3R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+                  alt="Product 6"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">Product 6</h6>
+                  <p class="card-text">$39.99</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <h2 id="categories" class="text-center mb-4">Product Categories</h2>
+          <div class="card-deck">
+            <div id="cat-el" class="card">
+              <img
+                class="card-img-top"
+                src="https://ace.electronicsforu.com/wp-content/uploads/2018/02/consumer-electronic-products-880x362.jpg"
+                alt="Category Electronics"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Electronics</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </p>
+                <a href="/products/electronics.html" class="btn btn-primary">
+                  View Products
+                </a>
+              </div>
+            </div>
+            <div id="cat-fur" class="card">
+              <img
+                class="card-img-top"
+                src="https://cdn.shopify.com/s/files/1/1185/9434/products/keep-s788-01_500x.jpg?v=1666701528"
+                alt="Category Furniture"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Furniture</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="./products/furniture.html" class="btn btn-primary">
+                  View Products
+                </a>
+              </div>
+            </div>
+            <div id="cat-cl" class="card">
+              <img
+                class="card-img-top"
+                src="https://thumbs.dreamstime.com/b/men-shirt-display-mannequin-clothes-shop-trendy-cotton-summer-collection-fashion-product-samples-clothing-store-selling-177634234.jpg"
+                alt="Category 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Clothing</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="./products/clothing.html" class="btn btn-primary">
+                  View Products
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-deck">
+            <div id="cat-gm" class="card">
+              <img
+                class="card-img-top"
+                src="https://media.istockphoto.com/id/1017309510/photo/box-of-toys-on-the-floor-teddy-bear-in-box-vintage-tone-charitable-contribution-donation.jpg?s=612x612&w=0&k=20&c=PS2qfHXOkWTXNpWz4DN6snecYWa-EXqexW7j2VkxGAw="
+                alt="Category Games"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Games & Toys</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="./products/games.html" class="btn btn-primary">
+                  View Products
+                </a>
+              </div>
+            </div>
+
+            <div id="cat-vet" class="card">
+              <img
+                class="card-img-top"
+                src="https://nypost.com/wp-content/uploads/sites/2/2022/10/dogfood.jpg?quality=75&strip=all"
+                alt="Category Veterinary"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Veterinary & Pet</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="./products/veterinary.html" class="btn btn-primary">
+                  View Products
+                </a>
+              </div>
+            </div>
+            <div id="cat-sta" class="card">
+              <img
+                class="card-img-top"
+                src="https://img3.exportersindia.com/product_images/bc-full/dir_182/5439587/stationeries-items-1515576014-3570595.jpeg"
+                alt="Category Stationery"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Stationery</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="./products/stationery.html" class="btn btn-primary">
+                  View Products
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-core.min.js"
+      integrity="sha384-J7V4n34hCFb5O5N5FyJr25rI+zNjOaDwOJ3tqg/5TEaGV/NI0moNbLX9pLnjxzLm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var chatBox = $(".chat-box");
+        var chatIcon = $(".chat-icon");
+        var messageBox = $("#message-box");
+        var messageInput = $("#message-input");
+        var sendButton = $("#send-button");
+
+        // Handle sending a message
+        $("form").submit(function (event) {
+          event.preventDefault();
+          var message = messageInput.val().trim();
+          if (message !== "") {
+            messageBox.append(
+              "<div class='alert alert-primary' role='alert'>" +
+                message +
+                "</div>"
+            );
+            messageInput.val("");
+          }
+        });
+
+        // Handle closing the chat box
+        $(".close").click(function () {
+          chatBox.hide();
+          chatIcon.show();
+        });
+
+        // Handle opening the chat box
+        chatIcon.click(function () {
+          chatBox.show();
+          chatIcon.hide();
+        });
+      });
+    </script>
+  </body>
+</html>

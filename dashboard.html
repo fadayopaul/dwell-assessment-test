@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">E-commerce Website</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.html">User Profile</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Admin</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- user information -->
+    <section id="profile" class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="card profile-card">
+            <div class="card-body">
+              <h3 class="card-title text-center">Profile Information</h3>
+              <h6 class="text-center">Fadayo Paul</h6>
+              <h6 class="text-center">+234 7066 653 871</h6>
+              <h6 class="text-center">paulfadayo@yahoo.com</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card profile-card">
+            <div class="card-body">
+              <h3 class="card-title">Update Profile</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  value="John Doe"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  value="johndoe@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  value="123-456-7890"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Update Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product List Section -->
+    <section id="products" class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="product-list">
+            <h3>My Products</h3>
+            <div class="card product-card">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    class="card-img"
+                    alt="Product Image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Digital Camera</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <p class="card-text">Price: $10.00</p>
+                    <p class="card-text">
+                      <small class="text-muted">Purchased on 14/04/2023</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card product-card">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                    class="card-img"
+                    alt="Product Image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Rayban Eyeglass</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="card-text">Price: $20.00</p>
+                    <p class="card-text">
+                      <small class="text-muted">Purchased on 14/04/2023</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card product-card">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+                    class="card-img"
+                    alt="Product Image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Chelsea Boot</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="card-text">Price: $30.00</p>
+                    <p class="card-text">
+                      <small class="text-muted">Purchased on 14/04/2023</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-core.min.js"
+      integrity="sha384-J7V4n34hCFb5O5N5FyJr25rI+zNjOaDwOJ3tqg/5TEaGV/NI0moNbLX9pLnjxzLm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
